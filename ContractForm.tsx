@@ -1,9 +1,9 @@
 'use client'
-import { useState } from 'react'
-import { db } from '@/lib/firebase'
-import { db } from './firebase'
-import { collection, addDoc, serverTimestamp } from 'firebase/firestore'
-import jsPDF from 'jspdf'
+import { useState } from 'react';
+import { db } from './firebase';
+import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
+import jsPDF from 'jspdf';
+
 
 export default function ContractForm() {
   const [form, setForm] = useState({
