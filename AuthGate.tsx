@@ -1,8 +1,8 @@
 'use client'
 import { useEffect, useState } from 'react'
 import { onAuthStateChanged, User } from 'firebase/auth'
-- import { auth, signInWithGoogle, signOutUser } from '@/lib/firebase'
-+ import { auth, signInWithGoogle, signOutUser } from './firebase'
+import { auth, signInWithGoogle, signOutUser } from '@/lib/firebase'
+import { auth, signInWithGoogle, signOutUser } from './firebase'
 
 
 export default function AuthGate({ children }: { children: React.ReactNode }) {
